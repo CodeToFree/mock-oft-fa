@@ -1,0 +1,17 @@
+[package]
+name = "oft"
+version = "1.0.0"
+authors = []
+
+[addresses]
+std = "0x1"
+oft = "0x8b97cdd1167c1ff03d438f66b1b9a15c5c526604976d64819ac57648aac81aff"
+
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dev-dependencies]
