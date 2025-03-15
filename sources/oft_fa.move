@@ -66,12 +66,12 @@ module oft::oft_fa {
         assert!(signer::address_of(account) == OFT_ADDRESS, 230);
         let asset_address = object::create_object_address(&OFT_ADDRESS, ASSET_SYMBOL);
         let store_mut = borrow_global_mut<OftImpl>(asset_address);
-        store_mut.whitelist.push_back(whitelist_address);
+        vector::push_back(&mut store_mut.whitelist, whitelist_address);
     }
 
     #[view]
     public fun check_whitelist(account: address): bool acquires OftImpl {
-        store().whitelist.contains(&account)
+        vector::contains(&store().whitelist, &account)
     }
 
     public entry fun mint(
