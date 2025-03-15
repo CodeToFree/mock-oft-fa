@@ -5,13 +5,13 @@ authors = []
 
 [addresses]
 std = "0x1"
-oft = "0x8b97cdd1167c1ff03d438f66b1b9a15c5c526604976d64819ac57648aac81aff"
+oft = "0xbc628ab9070b1ecb037b546cc61930ca78a8bc9d389c934ddc952eb943761112"
 
 [dev-addresses]
 
 [dependencies.AptosFramework]
-git = "https://github.com/aptos-labs/aptos-framework.git"
-rev = "mainnet"
-subdir = "aptos-framework"
+git = "https://github.com/movementlabsxyz/aptos-core"
+rev = "movement"
+subdir = "aptos-move/framework/aptos-framework"
 
 [dev-dependencies]
